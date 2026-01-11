@@ -1,0 +1,2658 @@
+ <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clROS"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ros_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/clROSsummary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/tvAllergies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ros_border"
+            android:paddingStart="12dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="6dp"
+            android:text="Allergies"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@id/tvSurgicalhistory"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSurgicalhistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ros_border"
+            android:paddingStart="12dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="6dp"
+            android:text="Surgical History"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/tvAllergies"
+            app:layout_constraintEnd_toStartOf="@id/tvCurrentsystemicmedications"
+            app:layout_constraintStart_toEndOf="@+id/tvAllergies"
+            app:layout_constraintTop_toTopOf="@+id/tvAllergies" />
+
+        <TextView
+            android:id="@+id/tvCurrentsystemicmedications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ros_border"
+            android:paddingStart="12dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="6dp"
+            android:text="Current Systemic Medications"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/tvSurgicalhistory"
+            app:layout_constraintEnd_toStartOf="@id/tvCurrenteyemicmedications"
+            app:layout_constraintStart_toEndOf="@+id/tvSurgicalhistory"
+            app:layout_constraintTop_toTopOf="@+id/tvSurgicalhistory" />
+
+        <TextView
+            android:id="@+id/tvCurrenteyemicmedications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ros_border"
+            android:paddingStart="12dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="6dp"
+            android:text="Current Eye Medications"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/tvCurrentsystemicmedications"
+            app:layout_constraintEnd_toStartOf="@id/tvSocial"
+            app:layout_constraintStart_toEndOf="@+id/tvCurrentsystemicmedications"
+            app:layout_constraintTop_toTopOf="@+id/tvCurrentsystemicmedications" />
+
+        <TextView
+            android:id="@+id/tvSocial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ros_border"
+            android:paddingStart="12dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="6dp"
+            android:text="Social"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/tvCurrenteyemicmedications"
+            app:layout_constraintEnd_toStartOf="@id/tvSystemichistory"
+            app:layout_constraintStart_toEndOf="@+id/tvCurrenteyemicmedications"
+            app:layout_constraintTop_toTopOf="@+id/tvCurrenteyemicmedications" />
+
+
+        <TextView
+            android:id="@+id/tvSystemichistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ros_border"
+            android:paddingStart="12dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="6dp"
+            android:text="Systemic History"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/tvSocial"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvSocial"
+            app:layout_constraintTop_toTopOf="@+id/tvSocial" />
+
+        <TextView
+            android:id="@+id/tvROSsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ros_save_border"
+            android:paddingStart="20dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="6dp"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clAllergies"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:paddingBottom="10dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAllergies">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAlergiesfrequently"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/allergies_border"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvAllergiesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Allergies"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <RadioGroup
+                    android:id="@+id/rbAllergies"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@id/tvAddAllergies"
+                    app:layout_constraintEnd_toStartOf="@id/tvAddAllergies"
+                    app:layout_constraintTop_toTopOf="@id/tvAddAllergies">
+
+                    <RadioButton
+                        android:id="@+id/rbNKA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No Known Allergy"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbNKDA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="No Known Drug Allergy"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tvAddAllergies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="+ Add Allergies"
+                    android:textColor="#1c96c5"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvAllergiesTitle" />
+
+                <TextView
+                    android:id="@+id/tvAllergiesFrequntly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:text="Frequently Added :"
+                    android:textColor="#868686"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rbAllergies" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvAllergiesFrequently"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="@id/tvAllergiesFrequntly"
+                    app:layout_constraintEnd_toEndOf="@+id/tvAddAllergies"
+                    app:layout_constraintStart_toEndOf="@id/tvAllergiesFrequntly"
+                    app:layout_constraintTop_toTopOf="@id/tvAllergiesFrequntly" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/llAllergies"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/clAlergiesfrequently"
+                app:layout_constraintStart_toStartOf="@+id/clAlergiesfrequently"
+                app:layout_constraintTop_toBottomOf="@+id/clAlergiesfrequently">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#2b2b2b"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvAllergyreaction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingEnd="0dp"
+                    android:text="Allergy Reaction"
+                    android:textAlignment="textEnd"
+                    android:textColor="#2b2b2b"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvAllergytype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="0dp"
+                    android:text="Allergy Type"
+                    android:textColor="#2b2b2b"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvAllergyonset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="0dp"
+                    android:text="Onset"
+                    android:textColor="#2b2b2b"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvAllergyseverity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    android:text="Severity"
+                    android:textColor="#2b2b2b"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvAllergystatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    android:text="Status"
+                    android:textColor="#2b2b2b"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvAllergyactions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    android:text="Actions"
+                    android:textColor="#2b2b2b"
+                    android:textSize="14sp"
+
+                    />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAllergies"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@id/llAllergies"
+                app:layout_constraintStart_toStartOf="@id/llAllergies"
+                app:layout_constraintTop_toBottomOf="@id/llAllergies" />
+
+            <TextView
+                android:id="@+id/tvAllergyAddnote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="+ Add Notes"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rvAllergies" />
+
+            <EditText
+                android:id="@+id/etAllergyAddnote"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/notes_border"
+                android:gravity="left"
+                android:hint="Notes"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="#AE9197"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvAllergyAddnote"
+                app:layout_constraintTop_toBottomOf="@id/tvAllergyAddnote" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clSurgicalhistory"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAllergies">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clSurgicalfrequently"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/allergies_border"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvSurgicaltitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Surgical History"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioButton
+                    android:id="@+id/rbNKSurgicalhistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="No Known Surgical History"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/tvAddSurgicalhistory"
+                    app:layout_constraintEnd_toStartOf="@id/tvAddSurgicalhistory"
+                    app:layout_constraintTop_toTopOf="@id/tvAddSurgicalhistory" />
+
+                <TextView
+                    android:id="@+id/tvAddSurgicalhistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="+ Add Surgical History"
+                    android:textColor="#1c96c5"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSurgicaltitle" />
+
+                <TextView
+                    android:id="@+id/tvSurgicalfrequently"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:text="Frequently Added :"
+                    android:textColor="#868686"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rbNKSurgicalhistory" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSurgicalfrequently"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="@id/tvSurgicalfrequently"
+                    app:layout_constraintEnd_toEndOf="@+id/tvAddSurgicalhistory"
+                    app:layout_constraintStart_toEndOf="@id/tvSurgicalfrequently"
+                    app:layout_constraintTop_toTopOf="@id/tvSurgicalfrequently" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llSurgicalhistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/clSurgicalhistory"
+                app:layout_constraintStart_toStartOf="@id/clSurgicalhistory"
+                app:layout_constraintTop_toBottomOf="@id/clSurgicalfrequently">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textAlignment="textEnd"
+                    android:textColor="#2b2b2b"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/tvSurgicalmodifier"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="22dp"
+                    android:paddingEnd="0dp"
+                    android:text="Modifier"
+                    android:textColor="#2b2b2b"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvSurgicalonset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="0dp"
+                    android:text="Onset"
+                    android:textColor="#2b2b2b"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvSurgicalactions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    android:text="Actions"
+                    android:textColor="#2b2b2b"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSurgicalhistory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@id/llSurgicalhistory"
+                app:layout_constraintStart_toStartOf="@id/llSurgicalhistory"
+                app:layout_constraintTop_toBottomOf="@id/llSurgicalhistory" />
+
+
+            <TextView
+                android:id="@+id/tvSurgicalAddnote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="+ Add Notes"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rvSurgicalhistory" />
+
+            <EditText
+                android:id="@+id/etSurgeryAddnote"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/notes_border"
+                android:gravity="left"
+                android:hint="Notes"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvSurgicalAddnote"
+                app:layout_constraintTop_toBottomOf="@id/tvSurgicalAddnote" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clCurrentsystemic"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAllergies">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clCurrentsystemicfrequently"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/allergies_border"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                >
+
+                <TextView
+                    android:id="@+id/tvCurrentsystemictitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Current Systemic Medications"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <RadioButton
+                    android:id="@+id/rbNKCSM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="No known Current Systemic Medications"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/tvAddCurrentsystemic"
+                    app:layout_constraintEnd_toStartOf="@id/tvAddCurrentsystemic"
+                    app:layout_constraintTop_toTopOf="@+id/tvAddCurrentsystemic" />
+
+                <TextView
+                    android:id="@+id/tvAddCurrentsystemic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="+ Add Current Systemic Medications"
+                    android:textColor="#1c96c5"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCurrentsystemictitle" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/llCurrentsystemic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/current_systemic_border"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clCurrentsystemicfrequently">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCurrentsystemic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    app:layout_constraintEnd_toEndOf="@id/llCurrentsystemic"
+                    app:layout_constraintStart_toStartOf="@id/llCurrentsystemic"
+                    app:layout_constraintTop_toTopOf="@id/llCurrentsystemic" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCurrentsystemicnote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="+ Add Notes"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/llCurrentsystemic" />
+
+            <EditText
+                android:id="@+id/etCurrentsystemicnote"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/notes_border"
+                android:gravity="left"
+                android:hint="Notes"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="#AE9197"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvCurrentsystemicnote"
+                app:layout_constraintTop_toBottomOf="@id/tvCurrentsystemicnote" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clCurrenteye"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAllergies">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clCurrenteyefrequently"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/allergies_border"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvCurrenteyetitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Current Eye Medications"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <RadioButton
+                    android:id="@+id/rbNKCEM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="No known Current Eye Medication"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/tvAddCurrenteye"
+                    app:layout_constraintEnd_toStartOf="@id/tvAddCurrenteye"
+                    app:layout_constraintTop_toTopOf="@+id/tvAddCurrenteye" />
+
+                <TextView
+                    android:id="@+id/tvAddCurrenteye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="+ Add Current Eye Medication"
+                    android:textColor="#1c96c5"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCurrenteyetitle" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/llCurrenteye"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/current_systemic_border"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clCurrenteyefrequently">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCurrenteye"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    app:layout_constraintEnd_toEndOf="@id/llCurrentsystemic"
+                    app:layout_constraintStart_toStartOf="@id/llCurrentsystemic"
+                    app:layout_constraintTop_toTopOf="@id/llCurrentsystemic" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCurrenteyenote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="+ Add Notes"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/llCurrenteye" />
+
+            <EditText
+                android:id="@+id/etCurrenteyenote"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/notes_border"
+                android:gravity="left"
+                android:hint="Notes"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="#AE9197"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvCurrenteyenote"
+                app:layout_constraintTop_toBottomOf="@id/tvCurrenteyenote" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clSocial"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAllergies">
+
+            <TextView
+                android:id="@+id/tvSocialtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Social"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/llSocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSocialtitle">
+
+                <LinearLayout
+                    android:id="@+id/llSmoking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvSmoking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:text="Smoking"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvSmokingColon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:text=":"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+
+                        <LinearLayout
+                            android:id="@+id/llSmokingSelect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/social_border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvSmokingYes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="18dp"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="18dp"
+                                android:paddingBottom="5dp"
+                                android:text="Yes"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <View
+                                android:id="@+id/vSmoking"
+                                android:layout_width="1dp"
+                                android:layout_height="30dp"
+                                android:background="#909090" />
+
+                            <TextView
+                                android:id="@+id/tvSmokingNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="18dp"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="18dp"
+                                android:paddingBottom="5dp"
+                                android:text="No"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSmokingstatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvSmokingstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:id="@+id/tvSelectSmokingstatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/allergy_type_border"
+                            android:drawableRight="@drawable/arrow_down"
+                            android:gravity="center|start"
+                            android:padding="4dp"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+
+                        <LinearLayout
+                            android:id="@+id/llSmokingdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/allergy_type_border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvSmokingdate"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_weight="1"
+                                android:hint="MM-DD-YYYY"
+                                android:padding="2dp"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:id="@+id/ivSmokingcalendar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/calendar" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvCigconsumption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="Cigaratte Consumption"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvSelectCigarrate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/allergy_type_border"
+                            android:drawableRight="@drawable/arrow_down"
+                            android:gravity="center|start"
+                            android:padding="5dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="0dp"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llAclohol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvAlcohol"
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:text="Alcohol"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvAlcoholColon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:text=":"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:id="@+id/llAlcoholoselect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/social_border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvAlcoholYes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="18dp"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="18dp"
+                                android:paddingBottom="5dp"
+                                android:text="Yes"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <View
+                                android:id="@+id/vAlcohol"
+                                android:layout_width="1dp"
+                                android:layout_height="30dp"
+                                android:background="#909090" />
+
+                            <TextView
+                                android:id="@+id/tvAlcoholNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="18dp"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="18dp"
+                                android:paddingBottom="5dp"
+                                android:text="No"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llAlcoholstatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvAlcoholstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:id="@+id/tvSelectAlcoholstatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/allergy_type_border"
+                            android:drawableRight="@drawable/arrow_down"
+                            android:gravity="center|start"
+                            android:padding="4dp"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+
+                        <LinearLayout
+                            android:id="@+id/llAlcoholdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/allergy_type_border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvAlcoholdate"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_weight="1"
+                                android:hint="MM-DD-YYYY"
+                                android:padding="2dp"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:id="@+id/ivAlcoholcalendar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/calendar" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvAlcoholquantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="Alcohol Quantity"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvSelectAlcohol"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/allergy_type_border"
+                            android:drawableRight="@drawable/arrow_down"
+                            android:gravity="center|start"
+                            android:padding="5dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="0dp"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llDrug"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvDurg"
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:text="Drug"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvDrugColon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:text=":"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+
+                        <LinearLayout
+                            android:id="@+id/llDrugselect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/social_border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvDrugYes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="18dp"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="18dp"
+                                android:paddingBottom="5dp"
+                                android:text="Yes"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <View
+                                android:id="@+id/vDurg"
+                                android:layout_width="1dp"
+                                android:layout_height="30dp"
+                                android:background="#909090" />
+
+                            <TextView
+                                android:id="@+id/tvDrugNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="18dp"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="18dp"
+                                android:paddingBottom="5dp"
+                                android:text="No"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llDrugstatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvDrugstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Drug Used"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:id="@+id/tvSelectDrugstatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/allergy_type_border"
+                            android:drawableRight="@drawable/arrow_down"
+                            android:gravity="center|start"
+                            android:padding="4dp"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+
+                            />
+
+
+                        <LinearLayout
+                            android:id="@+id/llDrugdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/allergy_type_border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvDrugdate"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_weight="1"
+                                android:hint="MM-DD-YYYY"
+                                android:padding="2dp"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:id="@+id/ivDrugcalendar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/calendar" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvDrugQuantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="Drug Quantity"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvSelectDrug"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/allergy_type_border"
+                            android:drawableRight="@drawable/arrow_down"
+                            android:gravity="center|start"
+                            android:padding="5dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="0dp"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llPhychis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvPhychis"
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:text="Phychis"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvPhychisColon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:text=":"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:id="@+id/llPhychisselect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/social_border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvPhychisYes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="18dp"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="18dp"
+                                android:paddingBottom="5dp"
+                                android:text="Yes"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <View
+                                android:id="@+id/vPhychis"
+                                android:layout_width="1dp"
+                                android:layout_height="30dp"
+                                android:background="#909090" />
+
+                            <TextView
+                                android:id="@+id/tvPhychisNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="18dp"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="18dp"
+                                android:paddingBottom="5dp"
+                                android:text="No"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvSocialnote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="+ Add Notes"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/etSocialnote"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/notes_border"
+                    android:gravity="left"
+                    android:hint="Notes"
+                    android:paddingStart="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="#AE9197"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clSystemichistory"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAllergies">
+
+            <TextView
+                android:id="@+id/tvSystemictitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Systemic History"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/llSystemichistory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSystemictitle">
+
+                <EditText
+                    android:id="@+id/etSystemichistory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/allergies_search_border"
+                    android:hint="Enter Systemic History"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/cbALLWNL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="All WNL"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvGridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Grid View"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/swGridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:thumbIcon="@drawable/thumb_icon"
+                    app:thumbIconSize="1dp"
+                    app:thumbTint="#ffffff" />
+
+                <CheckBox
+                    android:id="@+id/cbDefault"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Set as Default"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rbNKSystemichistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="No Known Systemic History"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/svSystemichistory"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/clSystemichistory"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/llSystemichistory">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llGridsystemichistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/llCardiovascular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvCardiovascular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:text="Cardiovascular"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/systemic_history_border"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cbCardiovascular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="38dp"
+                                        android:layout_marginStart="18dp"
+                                        android:layout_marginEnd="18dp"
+                                        android:text="WNL"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/vCardiovascular"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#acacac" />
+
+
+                            </LinearLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvCardiovascular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llNeurologic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvNeurologic"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:text="Neurologic"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/systemic_history_border"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cbNeurologic"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="38dp"
+                                        android:layout_marginStart="18dp"
+                                        android:layout_marginEnd="18dp"
+                                        android:text="WNL"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/vNeurologic"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#acacac" />
+
+                            </LinearLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvNeurologic"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llGeneral"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvGeneral"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:text="General"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/systemic_history_border"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cbGeneral"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="38dp"
+                                        android:layout_marginStart="18dp"
+                                        android:layout_marginEnd="18dp"
+                                        android:text="WNL"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/vGeneral"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#acacac" />
+
+                            </LinearLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvGeneral"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llAppearance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvAppearance"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:text="Appearance"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/systemic_history_border"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cbAppearance"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="38dp"
+                                        android:layout_marginStart="18dp"
+                                        android:layout_marginEnd="18dp"
+                                        android:text="WNL"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/vAppearance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#acacac" />
+
+                            </LinearLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvAppearance"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llHEENT"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvHEENT"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:text="HEENT"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/systemic_history_border"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cbHEENT"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="38dp"
+                                        android:layout_marginStart="18dp"
+                                        android:layout_marginEnd="18dp"
+                                        android:text="WNL"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/vHEENT"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#acacac" />
+
+                            </LinearLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvHEENT"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llLungs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvLungs"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:text="Lungs"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/systemic_history_border"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/cbLungs"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="38dp"
+                                        android:layout_marginStart="18dp"
+                                        android:layout_marginEnd="18dp"
+                                        android:text="WNL"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/vLungs"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#acacac" />
+
+                            </LinearLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvLungs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp" />
+
+                            <TextView
+                                android:id="@+id/tvAdditional"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:text="Additional"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llAdditional"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/llLungs">
+
+                            <LinearLayout
+                                android:id="@+id/llPlumonary"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvPlumonary"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:text="Plumonary"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/systemic_history_border"
+                                        android:orientation="horizontal">
+
+                                        <CheckBox
+                                            android:id="@+id/cbPlumonary"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="38dp"
+                                            android:layout_marginStart="18dp"
+                                            android:layout_marginEnd="18dp"
+                                            android:text="WNL"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp" />
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:id="@+id/vPlumonary"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#acacac" />
+
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvPlumonary"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llHepatic"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvHepatic"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:text="Hepatic/Liver"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/systemic_history_border"
+                                        android:orientation="horizontal">
+
+                                        <CheckBox
+                                            android:id="@+id/cbHepatic"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="38dp"
+                                            android:layout_marginStart="18dp"
+                                            android:layout_marginEnd="18dp"
+                                            android:text="WNL"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp" />
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:id="@+id/vHepatic"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#acacac" />
+
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvHepatic"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llHemeone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/llHepatic">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvHemeone"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:text="Heme One"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/systemic_history_border"
+                                        android:orientation="horizontal">
+
+                                        <CheckBox
+                                            android:id="@+id/cbHemeone"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="38dp"
+                                            android:layout_marginStart="18dp"
+                                            android:layout_marginEnd="18dp"
+                                            android:text="WNL"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp" />
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:id="@+id/vHemeone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#acacac" />
+
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvHemeone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llNervoussystem"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvNervoussystem"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:text="Nervous System"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/systemic_history_border"
+                                        android:orientation="horizontal">
+
+                                        <CheckBox
+                                            android:id="@+id/cbNervoussystem"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="38dp"
+                                            android:layout_marginStart="18dp"
+                                            android:layout_marginEnd="18dp"
+                                            android:text="WNL"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp" />
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:id="@+id/vNervoussystem"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#acacac" />
+
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvNervoussystem"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llKindneydisease"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvKidneydisease"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:text="Kidney Disease"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/systemic_history_border"
+                                        android:orientation="horizontal">
+
+                                        <CheckBox
+                                            android:id="@+id/cbKidneydisease"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="38dp"
+                                            android:layout_marginStart="18dp"
+                                            android:layout_marginEnd="18dp"
+                                            android:text="WNL"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp" />
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:id="@+id/vKindneydisease"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#acacac" />
+
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvKidneydisease"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llMusculoskeletical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvMusculoskeletical"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:text="Musculoskeletical System"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/systemic_history_border"
+                                        android:orientation="horizontal">
+
+                                        <CheckBox
+                                            android:id="@+id/cbMusculoskeletical"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="38dp"
+                                            android:layout_marginStart="18dp"
+                                            android:layout_marginEnd="18dp"
+                                            android:text="WNL"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp" />
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:id="@+id/vMusculoskeletical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#acacac" />
+
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvMusculoskeletical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llAutoimune"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvAutoimune"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:text="Auto Immune Disorders"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/systemic_history_border"
+                                        android:orientation="horizontal">
+
+                                        <CheckBox
+                                            android:id="@+id/cbAutoimune"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="38dp"
+                                            android:layout_marginStart="18dp"
+                                            android:layout_marginEnd="18dp"
+                                            android:text="WNL"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp" />
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:id="@+id/vAutoimune"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#acacac" />
+
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvAutoimune"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llPhychosis"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvPhychosis"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:text="Phychosis"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/systemic_history_border"
+                                        android:orientation="horizontal">
+
+                                        <CheckBox
+                                            android:id="@+id/cbPhychosis"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="38dp"
+                                            android:layout_marginStart="18dp"
+                                            android:layout_marginEnd="18dp"
+                                            android:text="WNL"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp" />
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:id="@+id/vPhychosis"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#acacac" />
+
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvPhychosis"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llOthers"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvOthers"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:text="Others"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:background="@drawable/systemic_history_border"
+                                        android:orientation="horizontal">
+
+                                        <CheckBox
+                                            android:id="@+id/cbOthers"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="38dp"
+                                            android:layout_marginStart="18dp"
+                                            android:layout_marginEnd="18dp"
+                                            android:text="WNL"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp" />
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:id="@+id/vOthers"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#acacac" />
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvOthers"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvMore"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/more_border"
+                            android:gravity="center"
+                            android:text="+ More"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSearchSystemichistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/llSearchSystemictitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@drawable/systemic_title_border"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tvFindings"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Findings"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tvOnset"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingStart="7dp"
+                                android:text="Onset"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/llStatus"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingStart="8dp"
+                                android:text="Status"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/llSeverity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingStart="10dp"
+                                android:text="Severity"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/llAction"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingStart="10dp"
+                                android:text="Action"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvSystemichistory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvSystemichistorynote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="+ Add Notes"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/clSystemichistory" />
+
+                    <EditText
+                        android:id="@+id/etSystemichistorynote"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/notes_border"
+                        android:gravity="left"
+                        android:hint="Notes"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="5dp"
+                        android:textColor="#AE9197"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="@id/clSystemichistory"
+                        app:layout_constraintTop_toBottomOf="@id/clSystemichistory"
+
+                        />
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clROSsummary"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/ros_background"
+        app:layout_constraintBottom_toBottomOf="@id/clROS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/clROS"
+        app:layout_constraintTop_toTopOf="@id/clROS">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
