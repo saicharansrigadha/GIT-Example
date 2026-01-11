@@ -1,0 +1,28 @@
+package com.example.pdfpicker
+
+import android.net.Uri
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+
+class PDFAdapter(private val pdfList: List<Uri>) : RecyclerView.Adapter<PDFAdapter.PDFViewHolder>() {
+
+    class PDFViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val tvPDFName: TextView = view.findViewById(R.id.tvPDFName)
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PDFViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_pdf, parent, false)
+        return PDFViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: PDFViewHolder, position: Int) {
+        holder.tvPDFName.text = pdfList[position].toString()
+    }
+
+    override fun getItemCount(): Int {
+        return pdfList.size
+    }
+}
